@@ -1,0 +1,14 @@
+<h1>All Items</h1>
+
+<ul>
+  <% @items.each do |item_hash| %>
+    <li> <%= item_hash["item"] %></li>
+  <% end %>
+</ul>
+
+<h2>Add Item:</h2>
+
+<form action="items" method="post">
+  <input type="text" name="item" />
+  <input type="submit"/>
+</form>
